@@ -5,7 +5,7 @@ import { assets } from '../../assets/assets'
 const AppDowload = () => {
   return (
     <div className='app-dowload' id='app-dowload'>
-        <p> For Better Experience Dowload <br/> Tomato app</p>
+        <p> For Better Experience Dowload <br/> Cplate app</p>
         <div className="app-dowload-platforms">
             <img src={assets.play_store}/>
             <img src={assets.app_store}/>

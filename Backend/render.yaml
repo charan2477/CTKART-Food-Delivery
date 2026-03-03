@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: ctkart-backend
+    env: node
+    region: oregon
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: MONGODB_URI
+        value: mongodb+srv://khiladi0024:Charanwebdev11@cluster0.zmiu52n.mongodb.net/Delivery_food
+      - key: JWT_SECRET
+        value: your_secure_random_string_here
+      - key: STRIPE_SECRET_KEY
+        value: your_stripe_key_here
+      - key: PORT
+        value: 1000
+
+

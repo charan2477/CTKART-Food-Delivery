@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="footer-content">
             <div className="footer-content-left">
                 <img className='logo1' src={assets.logoimg}/>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas dignissimos nobis sequi illum placeat eligendi? Hic, consequatur tempore illum natus quidem, ea, laboriosam vero repellat ut odio ipsam. Porro, odio?</p>
+                <p>Cplate is food Delivery Project </p>
                 <div className="footer-social-icons">
                     <img src={assets.facebook_icon} alt="" />
                     <img src={assets.twitter_icon} alt="" />
@@ -28,7 +28,7 @@ const Footer = () => {
                 <h2>Get In Touch</h2>
                 <ul>
                     <li>+91313113931</li>
-                    <li>Tomafagasg@gmail.com</li>
+                    <li>Cplate@gmail.com</li>
                 </ul>
 
             </div>

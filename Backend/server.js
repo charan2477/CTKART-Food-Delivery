@@ -7,14 +7,20 @@ import userRouter from "./routes/routeRoute.js"
 import 'dotenv/config'
 import cartRouter from "./routes/cartRoute.js"
 import orderRouter from "./routes/orderRoute.js"
+
 //app config
 
 const app = express()
-const port =1000
+const port = process.env.PORT || 1000
 
 // middleware
 app.use(express.json())
-app.use(cors())
+
+// CORS configuration - allow all origins for production
+app.use(cors({
+    origin: true,  // Allow all origins in production
+    credentials: true
+}))
 
 // db connection
 connectDB();

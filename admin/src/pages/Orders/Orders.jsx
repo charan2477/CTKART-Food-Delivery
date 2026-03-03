@@ -7,7 +7,7 @@ import {assets} from '../../assets/assets'
 const Order = () => {
 
   const [orders, setOrders] = useState([]);
-  const url =  "http://localhost:1000"
+  const url = import.meta.env.VITE_API_URL || "http://localhost:1000";
   
 
   const fetchAllOrders = async () => {

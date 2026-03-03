@@ -1,6 +1,13 @@
 import mongoose from "mongoose";
+import 'dotenv/config';
+
 export const connectDB = async ()=>{
-    await mongoose.connect('mongodb+srv://khiladi0024:Charanwebdev11@cluster0.zmiu52n.mongodb.net/Delivery_food').then(()=>
-        console.log("DB connected"));
+    const mongoUri = process.env.MONGODB_URI;
+    if (!mongoUri) {
+        console.error("Error: MONGODB_URI is not defined in environment variables");
+        process.exit(1);
+    }
+    await mongoose.connect(mongoUri).then(()=>
+        console.log("DB connected")).catch(err => console.error("DB connection error:", err));
     
 }
